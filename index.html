@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+  <title>BuildCraft Structure Design — Structural Engineering & Architecture Kolkata</title>
+  <meta name="description" content="BuildCraft Structure Design specializes in advanced structural engineering, high-rise RCC drafting, foundation analysis, and architectural blueprints in Park Street, Kolkata.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/svg+xml" href="assets/images/logo.svg">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <!-- Ambient Orbs and Grid -->
+  <div class="ambient-glow-orb orb-1"></div>
+  <div class="ambient-glow-orb orb-2"></div>
+  <div class="arch-grid-bg"></div>
+
+  <!-- TheDivine Floating Pill Navbar -->
+  <header class="the-divine-navbar-wrapper">
+    <nav class="the-divine-navbar" aria-label="Main Navigation">
+      <a href="index.html" class="brand-wrapper">
+        <img src="assets/images/logo.svg" alt="BuildCraft Logo" class="brand-logo-img">
+        <div>
+          <span class="brand-name">BuildCraft</span>
+          <span class="brand-sub">Structure Design</span>
+        </div>
+      </a>
+
+      <ul class="nav-links">
+        <li><a href="index.html" class="nav-link active">Home</a></li>
+        <li><a href="structural.html" class="nav-link">Structural</a></li>
+        <li><a href="architecture.html" class="nav-link">Architecture</a></li>
+        <li><a href="retrofit.html" class="nav-link">Retrofit</a></li>
+        <li><a href="projects.html" class="nav-link">Projects</a></li>
+        <li><a href="reviews.html" class="nav-link">Reviews</a></li>
+        <li><a href="contact.html" class="nav-link">Contact</a></li>
+      </ul>
+
+      <div class="header-actions">
+        <a href="https://wa.me/917439076081?text=Hello%20BuildCraft%2C%20I%20would%20like%20to%20consult%20regarding%20structural%20design%20and%20drawings." class="btn-cta-pill" target="_blank" rel="noopener">
+          <svg class="wa-svg-icon" viewBox="0 0 32 32" style="width: 17px; height: 17px;">
+            <circle cx="16" cy="16" r="15" fill="#25D366"/>
+            <path fill="#FFFFFF" d="M16 6.5C10.8 6.5 6.5 10.8 6.5 16c0 1.9.5 3.6 1.5 5.1L6.5 25.5l4.6-1.4c1.4.9 3.1 1.4 4.9 1.4 5.2 0 9.5-4.3 9.5-9.5s-4.3-9.5-9.5-9.5zm5.5 13.4c-.2.6-1.3 1.2-1.8 1.2-.5.1-1.1.2-3.3-.7-2.7-1.1-4.4-3.9-4.5-4.1-.1-.2-1.1-1.5-1.1-2.8 0-1.3.7-2 1-2.2.2-.2.6-.3.9-.3.1 0 .2 0 .3.1.3 0 .4.1.5.4.2.5.7 1.8.8 1.9.1.2.1.4 0 .6-.1.2-.2.3-.3.5-.1.1-.3.3-.4.4-.1.1-.3.3-.1.6.2.4.9 1.5 1.9 2.4 1.3 1.2 2.4 1.5 2.8 1.7.4.2.6.1.8-.1.3-.3.7-.8.9-1.1.2-.3.4-.3.7-.2.3.1 1.8.9 2.1 1 .3.2.5.3.6.4.1.2.1.8-.1 1.4z"/>
+          </svg>
+          <span>Consult Engineer</span>
+        </a>
+
+        <button class="nav-toggle-btn" aria-label="Toggle Navigation Menu">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M4 6h16M4 12h16M4 18h16"/>
+          </svg>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Mobile Nav Drawer -->
+  <div class="mobile-nav-drawer" role="dialog" aria-modal="true">
+    <ul class="mobile-nav-links">
+      <li><a href="index.html" class="mobile-nav-link active">Home</a></li>
+      <li><a href="structural.html" class="mobile-nav-link">Structural Engineering</a></li>
+      <li><a href="architecture.html" class="mobile-nav-link">Architectural Blueprints</a></li>
+      <li><a href="retrofit.html" class="mobile-nav-link">Retrofitting & Vetting</a></li>
+      <li><a href="projects.html" class="mobile-nav-link">Signature Projects</a></li>
+      <li><a href="reviews.html" class="mobile-nav-link">Client Reviews</a></li>
+      <li><a href="contact.html" class="mobile-nav-link">Contact Studio</a></li>
+    </ul>
+    <div style="margin-top: 1.5rem; text-align: center;">
+      <a href="https://wa.me/917439076081" class="btn-hero-primary" style="width: 100%;" target="_blank" rel="noopener">
+        <svg class="wa-svg-icon" viewBox="0 0 32 32">
+          <circle cx="16" cy="16" r="14" fill="#FFFFFF"/>
+          <path fill="#25D366" d="M16 7C11 7 7 11 7 16c0 1.8.5 3.5 1.4 5L7 25l4.2-1.3c1.4.8 3.1 1.3 4.8 1.3 5 0 9-4 9-9s-4-9-9-9zm4.8 12.6c-.2.5-1.1 1-1.6 1.1-.4.1-.9.1-2.9-.7-2.4-1-3.9-3.4-4-3.6-.1-.2-1-1.3-1-2.5 0-1.2.6-1.7.8-2 .2-.2.5-.3.8-.3h.2c.2 0 .4.1.5.3.2.4.6 1.5.7 1.7.1.1.1.3 0 .5-.1.2-.2.3-.3.4-.1.1-.2.2-.4.4-.1.1-.2.3-.1.5.2.4.8 1.3 1.7 2.1 1.1 1 2.1 1.3 2.5 1.5.3.1.5.1.7-.1.2-.3.6-.7.8-.9.2-.3.4-.2.6-.1.2.1 1.6.8 1.8.9.3.1.4.2.5.4.1.2.1.7-.1 1.2z"/>
+        </svg>
+        <span>WhatsApp Engineer</span>
+      </a>
+    </div>
+  </div>
+
+  <!-- Hero Section with 16:9 Cinema Canvas -->
+  <section class="hero-cinema">
+    <video class="hero-video-bg" autoplay muted loop playsinline poster="assets/images/hero-poster.jpg">
+      <source src="assets/videos/hero.mp4" type="video/mp4">
+    </video>
+    <div class="hero-overlay"></div>
+
+    <div class="hero-content">
+      <div class="hero-badge">
+        <span class="live-beacon"></span>
+        <span>Collin Street / Park Street • Kolkata</span>
+      </div>
+
+      <h1 class="hero-title">Precision Structural Engineering.<br>Visionary Architecture.</h1>
+      
+      <p class="hero-subtitle">
+        BuildCraft Structure Design delivers rigorous RCC frame analysis, seismic-resistant foundation engineering, and KMC-sanctioned architectural blueprints across Kolkata.
+      </p>
+
+      <div class="hero-cta-group">
+        <a href="https://wa.me/917439076081?text=Hello%20BuildCraft%2C%20I%20would%20like%20to%20discuss%20a%20structural%20engineering%20or%20architectural%20project." class="btn-hero-primary" target="_blank" rel="noopener">
+          <!-- High Contrast WhatsApp SVG -->
+          <svg class="wa-svg-icon" viewBox="0 0 32 32">
+            <circle cx="16" cy="16" r="14" fill="#FFFFFF"/>
+            <path fill="#25D366" d="M16 7C11 7 7 11 7 16c0 1.8.5 3.5 1.4 5L7 25l4.2-1.3c1.4.8 3.1 1.3 4.8 1.3 5 0 9-4 9-9s-4-9-9-9zm4.8 12.6c-.2.5-1.1 1-1.6 1.1-.4.1-.9.1-2.9-.7-2.4-1-3.9-3.4-4-3.6-.1-.2-1-1.3-1-2.5 0-1.2.6-1.7.8-2 .2-.2.5-.3.8-.3h.2c.2 0 .4.1.5.3.2.4.6 1.5.7 1.7.1.1.1.3 0 .5-.1.2-.2.3-.3.4-.1.1-.2.2-.4.4-.1.1-.2.3-.1.5.2.4.8 1.3 1.7 2.1 1.1 1 2.1 1.3 2.5 1.5.3.1.5.1.7-.1.2-.3.6-.7.8-.9.2-.3.4-.2.6-.1.2.1 1.6.8 1.8.9.3.1.4.2.5.4.1.2.1.7-.1 1.2z"/>
+          </svg>
+          <span>WhatsApp Studio (+91 74390 76081)</span>
+        </a>
+        <a href="#estimator" class="btn-hero-secondary">
+          <span>Structural Calculator</span>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+      </div>
+
+      <!-- Telemetry Stats in 2x2 grid fitting above fold -->
+      <div class="hero-telemetry-grid">
+        <div class="hero-stat-card">
+          <div class="stat-number">IS 456</div>
+          <div class="stat-label">Code Compliant</div>
+        </div>
+        <div class="hero-stat-card">
+          <div class="stat-number">85+</div>
+          <div class="stat-label">Structures Vetted</div>
+        </div>
+        <div class="hero-stat-card">
+          <div class="stat-number">Zone III</div>
+          <div class="stat-label">Seismic Engineering</div>
+        </div>
+        <div class="hero-stat-card">
+          <div class="stat-number">100%</div>
+          <div class="stat-label">Sanction Accuracy</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 1: Core Engineering Disciplines (Bento Grid) -->
+  <section class="section" id="disciplines">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-eyebrow">Engineering Prowess</span>
+        <h2 class="section-title">Built On Structural Rigor</h2>
+        <p class="section-desc">From soil analysis and deep pile foundation designs to high-rise RCC frames and steel structures across Kolkata.</p>
+      </div>
+
+      <div class="bento-grid">
+        <!-- Card 1 -->
+        <div class="bento-card">
+          <div class="bento-card-media">
+            <img src="assets/images/penthouse-balcony-terrace.jpg" alt="Structural Analysis & RCC Framing" loading="lazy">
+          </div>
+          <div class="bento-card-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg>
+          </div>
+          <h3 class="bento-card-title">RCC Frame & High-Rise Analysis</h3>
+          <p class="bento-card-desc">Advanced finite element modeling (FEM) for multi-storey residential and commercial towers, ensuring optimal dead/live load distributions.</p>
+          <a href="structural.html" class="bento-card-link">Explore Structural Solutions →</a>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="bento-card">
+          <div class="bento-card-media">
+            <img src="assets/images/false-ceiling-lighting.jpg" alt="Architectural Working Blueprints" loading="lazy">
+          </div>
+          <div class="bento-card-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+          </div>
+          <h3 class="bento-card-title">Architectural Blueprints & Sanctions</h3>
+          <p class="bento-card-desc">Complete working architectural packages, facade elevations, stair core details, and KMC/NKDA sanction drawing submissions.</p>
+          <a href="architecture.html" class="bento-card-link">View Architectural Services →</a>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="bento-card">
+          <div class="bento-card-media">
+            <img src="assets/images/architect-studio-team.jpg" alt="Structural Retrofit & NDT Vetting" loading="lazy">
+          </div>
+          <div class="bento-card-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          </div>
+          <h3 class="bento-card-title">Structural Audit & Retrofitting</h3>
+          <p class="bento-card-desc">Non-destructive testing (NDT), carbon-fiber wrap reinforcement, jacketing, and stability certifications for vintage Kolkata buildings.</p>
+          <a href="retrofit.html" class="bento-card-link">Discover Retrofit Services →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 2: Interactive Structural Load & RCC Estimator -->
+  <section class="section-alt" id="estimator">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-eyebrow">Interactive Estimator</span>
+        <h2 class="section-title">Structural Steel & RCC Feasibility Calculator</h2>
+        <p class="section-desc">Estimate required structural steel tonnage and concrete volume for your Kolkata construction project.</p>
+      </div>
+
+      <div class="estimator-card">
+        <form id="structural-estimator-form">
+          <div class="estimator-grid">
+            <div class="form-group">
+              <label class="form-label" for="calc-type">Structural Typology</label>
+              <select id="calc-type" class="form-select">
+                <option value="residential" selected>Multi-Storey Residential RCC Frame (G+4 to G+10)</option>
+                <option value="highrise">High-Rise Tower (G+12+ with Shear Walls)</option>
+                <option value="peb">Industrial Pre-Engineered Steel (PEB Warehouse)</option>
+                <option value="retrofit">Structural Retrofit / Heritage Strengthening</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="calc-soil">Subsurface / Foundation Condition</label>
+              <select id="calc-soil" class="form-select">
+                <option value="pile" selected>Bored Cast-in-Situ Piling (Kolkata Silt / Clay)</option>
+                <option value="raft">Raft Foundation (Basement Parking Substructure)</option>
+                <option value="footing">Isolated / Strip Footing (Firm Bearing Stratum)</option>
+              </select>
+            </div>
+
+            <div class="form-group" style="grid-column: span 2;">
+              <label class="form-label" for="calc-area">Total Covered Built-Up Area (sq. ft.)</label>
+              <input type="number" id="calc-area" class="form-control" value="6500" min="500" max="200000" step="250">
+            </div>
+          </div>
+
+          <div class="estimator-result-box">
+            <div style="font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--text-muted);">Estimated Material Demand</div>
+            <div class="estimator-result-val" id="calc-result">~31 MT Steel | ~296 m³ RCC</div>
+            <div id="calc-details" style="font-size: 0.9rem; color: var(--text-secondary); margin-bottom: 1.25rem;">Based on IS 456 & IS 800 standards for Kolkata seismic Zone III conditions.</div>
+
+            <a href="https://wa.me/917439076081" id="calc-wa-btn" class="btn-hero-primary" target="_blank" rel="noopener">
+              <svg class="wa-svg-icon" viewBox="0 0 32 32">
+                <circle cx="16" cy="16" r="14" fill="#FFFFFF"/>
+                <path fill="#25D366" d="M16 7C11 7 7 11 7 16c0 1.8.5 3.5 1.4 5L7 25l4.2-1.3c1.4.8 3.1 1.3 4.8 1.3 5 0 9-4 9-9s-4-9-9-9zm4.8 12.6c-.2.5-1.1 1-1.6 1.1-.4.1-.9.1-2.9-.7-2.4-1-3.9-3.4-4-3.6-.1-.2-1-1.3-1-2.5 0-1.2.6-1.7.8-2 .2-.2.5-.3.8-.3h.2c.2 0 .4.1.5.3.2.4.6 1.5.7 1.7.1.1.1.3 0 .5-.1.2-.2.3-.3.4-.1.1-.2.2-.4.4-.1.1-.2.3-.1.5.2.4.8 1.3 1.7 2.1 1.1 1 2.1 1.3 2.5 1.5.3.1.5.1.7-.1.2-.3.6-.7.8-.9.2-.3.4-.2.6-.1.2.1 1.6.8 1.8.9.3.1.4.2.5.4.1.2.1.7-.1 1.2z"/>
+              </svg>
+              <span>Consult Chief Structural Engineer on WhatsApp</span>
+            </a>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 3: Signature Engineering Projects -->
+  <section class="section" id="projects">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-eyebrow">Case Studies</span>
+        <h2 class="section-title">Engineered For Longevity</h2>
+        <p class="section-desc">Selected projects designed and structural vetted by BuildCraft Structure Design in Kolkata.</p>
+      </div>
+
+      <div class="filter-rail-sticky-wrapper">
+        <div class="portfolio-filter" role="tablist">
+          <button class="filter-btn active" data-filter="all">All Projects</button>
+          <button class="filter-btn" data-filter="residential">Residential RCC</button>
+          <button class="filter-btn" data-filter="commercial">Commercial</button>
+          <button class="filter-btn" data-filter="retrofit">Retrofit</button>
+        </div>
+      </div>
+
+      <div class="portfolio-grid">
+        <!-- Project 1 -->
+        <div class="project-card" data-category="commercial">
+          <div class="project-media">
+            <img src="assets/images/penthouse-balcony-terrace.jpg" alt="Park Street Commercial Complex" loading="lazy">
+            <span class="project-tag">Commercial RCC</span>
+          </div>
+          <div class="project-info">
+            <h3 class="project-title">Park Street Corporate Tower</h3>
+            <div class="project-loc">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              <span>Park Street, Kolkata</span>
+            </div>
+            <p class="project-details">B+G+11 commercial building with 600mm dia bored cast-in-situ piles, post-tensioned beam-slab system, and glass curtain wall structural detailing.</p>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="project-card" data-category="residential">
+          <div class="project-media">
+            <img src="assets/images/luxury-living-room.jpg" alt="Alipore Luxury Enclave" loading="lazy">
+            <span class="project-tag">Residential RCC</span>
+          </div>
+          <div class="project-info">
+            <h3 class="project-title">The Alipore Sovereign Residences</h3>
+            <div class="project-loc">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              <span>Alipore, Kolkata</span>
+            </div>
+            <p class="project-details">Exclusive G+5 low-density residential enclave with high-ductility seismic detailing (Zone III), column-free living halls, and subterranean basement drainage.</p>
+          </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="project-card" data-category="retrofit">
+          <div class="project-media">
+            <img src="assets/images/architect-studio-team.jpg" alt="Heritage Restoration Collin Street" loading="lazy">
+            <span class="project-tag">Heritage Retrofit</span>
+          </div>
+          <div class="project-info">
+            <h3 class="project-title">Collin Street Colonial Restoration</h3>
+            <div class="project-loc">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              <span>Collin Street, Kolkata</span>
+            </div>
+            <p class="project-details">Structural rehabilitation of a 90-year-old load-bearing masonry building using micro-concrete column jacketing and steel joist replacement.</p>
+          </div>
+        </div>
+
+        <!-- Project 4 (hide on mobile) -->
+        <div class="project-card hide-on-mobile" data-category="residential">
+          <div class="project-media">
+            <img src="assets/images/contemporary-study-office.jpg" alt="Ballygunge Residential Tower" loading="lazy">
+            <span class="project-tag">Residential</span>
+          </div>
+          <div class="project-info">
+            <h3 class="project-title">Ballygunge Circular Enclave</h3>
+            <div class="project-loc">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              <span>Ballygunge, Kolkata</span>
+            </div>
+            <p class="project-details">High-rise structural drafting with dual lateral-load resisting system (moment-resisting frames with core shear walls) to withstand wind vortex forces.</p>
+          </div>
+        </div>
+
+        <!-- Project 5 (hide on mobile) -->
+        <div class="project-card hide-on-mobile" data-category="commercial">
+          <div class="project-media">
+            <img src="assets/images/smart-home-lounge.jpg" alt="Salt Lake IT Facility" loading="lazy">
+            <span class="project-tag">IT Infrastructure</span>
+          </div>
+          <div class="project-info">
+            <h3 class="project-title">Sector V High-Density Hub</h3>
+            <div class="project-loc">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              <span>Sector V, Kolkata</span>
+            </div>
+            <p class="project-details">Server floor slab load calculations (10 kN/m²), heavy equipment anti-vibration inertia plinths, and fire escape egress engineering.</p>
+          </div>
+        </div>
+
+        <!-- Project 6 (hide on mobile) -->
+        <div class="project-card hide-on-mobile" data-category="retrofit">
+          <div class="project-media">
+            <img src="assets/images/false-ceiling-lighting.jpg" alt="Structural Audit & NDT Testing" loading="lazy">
+            <span class="project-tag">Structural Audit</span>
+          </div>
+          <div class="project-info">
+            <h3 class="project-title">Chowringhee Industrial Warehouse</h3>
+            <div class="project-loc">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              <span>Chowringhee, Kolkata</span>
+            </div>
+            <p class="project-details">Ultrasonic pulse velocity (UPV) and rebound hammer testing followed by steel roof truss strengthening with welded gusset reinforcements.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 4: Verified Client Testimonials -->
+  <section class="section-alt" id="reviews">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-eyebrow">Reputation & Trust</span>
+        <h2 class="section-title">Client & Developer Endorsements</h2>
+        <p class="section-desc">What builders, property owners, and architects say about partnering with BuildCraft Structure Design.</p>
+      </div>
+
+      <div class="reviews-grid">
+        <div class="review-card">
+          <div class="review-stars">★★★★★</div>
+          <p class="review-text">"BuildCraft's structural drawings passed KMC sanction scrutiny without a single revision. Their steel optimization saved our development over 18 metric tonnes of rebar."</p>
+          <div class="review-author">
+            <div class="review-avatar">MD</div>
+            <div>
+              <div class="author-name">Mirza Danish</div>
+              <div class="author-location">Park Street, Kolkata</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="review-card">
+          <div class="review-stars">★★★★★</div>
+          <p class="review-text">"We engaged BuildCraft for a tricky structural retrofit of our ancestral property near Collin Street. Their foundation underpinning and jacketing restored complete stability."</p>
+          <div class="review-author">
+            <div class="review-avatar">AK</div>
+            <div>
+              <div class="author-name">Arshad Khan</div>
+              <div class="author-location">Collin Street, Kolkata</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="review-card hide-on-mobile">
+          <div class="review-stars">★★★★★</div>
+          <p class="review-text">"Prompt site inspections, thorough STAAD.Pro analysis reports, and meticulous rebar bar-bending schedules (BBS). A reliable structural partner for any commercial project."</p>
+          <div class="review-author">
+            <div class="review-avatar">SM</div>
+            <div>
+              <div class="author-name">Sanjay Mukherjee</div>
+              <div class="author-location">Ballygunge, Kolkata</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 5: Direct Studio Contact & Consultation -->
+  <section class="section" id="contact">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-eyebrow">Initiate Consultation</span>
+        <h2 class="section-title">Connect with Our Structural Engineers</h2>
+        <p class="section-desc">Review your site plans, soil report, or building renovation requirements with our licensed engineers.</p>
+      </div>
+
+      <div class="contact-grid">
+        <div class="contact-info-card">
+          <h3 style="font-family: var(--font-heading); font-size: 1.5rem; margin-bottom: 1.5rem; color: var(--text-primary);">BuildCraft Studio Office</h3>
+          
+          <div class="contact-item">
+            <div class="contact-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            </div>
+            <div class="contact-text">
+              <h4>Studio Location</h4>
+              <p>Collin Street / Park Street, Kolkata – 700016, West Bengal, India</p>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-icon">
+              <svg class="wa-svg-icon" viewBox="0 0 32 32">
+                <circle cx="16" cy="16" r="14" fill="#25D366"/>
+                <path fill="#FFFFFF" d="M16 6.5C10.8 6.5 6.5 10.8 6.5 16c0 1.9.5 3.6 1.5 5.1L6.5 25.5l4.6-1.4c1.4.9 3.1 1.4 4.9 1.4 5.2 0 9.5-4.3 9.5-9.5s-4.3-9.5-9.5-9.5zm5.5 13.4c-.2.6-1.3 1.2-1.8 1.2-.5.1-1.1.2-3.3-.7-2.7-1.1-4.4-3.9-4.5-4.1-.1-.2-1.1-1.5-1.1-2.8 0-1.3.7-2 1-2.2.2-.2.6-.3.9-.3.1 0 .2 0 .3.1.3 0 .4.1.5.4.2.5.7 1.8.8 1.9.1.2.1.4 0 .6-.1.2-.2.3-.3.5-.1.1-.3.3-.4.4-.1.1-.3.3-.1.6.2.4.9 1.5 1.9 2.4 1.3 1.2 2.4 1.5 2.8 1.7.4.2.6.1.8-.1.3-.3.7-.8.9-1.1.2-.3.4-.3.7-.2.3.1 1.8.9 2.1 1 .3.2.5.3.6.4.1.2.1.8-.1 1.4z"/>
+              </svg>
+            </div>
+            <div class="contact-text">
+              <h4>Direct WhatsApp & Phone</h4>
+              <p><a href="https://wa.me/917439076081">+91 74390 76081</a></p>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            </div>
+            <div class="contact-text">
+              <h4>Consultation Hours</h4>
+              <p>Monday – Saturday: 10:00 AM – 7:00 PM</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-form-card">
+          <h3 style="font-family: var(--font-heading); font-size: 1.5rem; margin-bottom: 1.5rem; color: var(--text-primary);">Submit Project Brief</h3>
+          
+          <form onsubmit="event.preventDefault(); const name = document.getElementById('b-name').value; const area = document.getElementById('b-area').value; const loc = document.getElementById('b-loc').value; const req = document.getElementById('b-req').value; const msg = encodeURIComponent(`Hello BuildCraft Structure Design, my name is ${name}. I have a ${area} project in ${loc}. Requirement: ${req}. I would like to schedule a structural engineering consultation.`); window.open(`https://wa.me/917439076081?text=${msg}`, '_blank');">
+            <div class="form-group">
+              <label class="form-label" for="b-name">Your Full Name</label>
+              <input type="text" id="b-name" class="form-control" placeholder="e.g. Farhan Siddiqui" required>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="b-loc">Site Location in Kolkata</label>
+              <input type="text" id="b-loc" class="form-control" placeholder="e.g. Park Street / Alipore / Salt Lake" required>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="b-area">Built-Up Area / Number of Floors</label>
+              <input type="text" id="b-area" class="form-control" placeholder="e.g. G+4 Building, 8,000 sq.ft." required>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="b-req">Service Required</label>
+              <select id="b-req" class="form-select">
+                <option value="RCC Structural Design & Drawings">RCC Structural Design & Drawings</option>
+                <option value="Architectural Sanction Blueprints">Architectural Sanction Blueprints</option>
+                <option value="Old Building Structural Audit & Retrofitting">Old Building Structural Audit & Retrofitting</option>
+                <option value="Soil Test & Foundation Consultation">Soil Test & Foundation Consultation</option>
+              </select>
+            </div>
+
+            <button type="submit" class="btn-form-submit">
+              <svg class="wa-svg-icon" viewBox="0 0 32 32">
+                <circle cx="16" cy="16" r="14" fill="#FFFFFF"/>
+                <path fill="#25D366" d="M16 7C11 7 7 11 7 16c0 1.8.5 3.5 1.4 5L7 25l4.2-1.3c1.4.8 3.1 1.3 4.8 1.3 5 0 9-4 9-9s-4-9-9-9zm4.8 12.6c-.2.5-1.1 1-1.6 1.1-.4.1-.9.1-2.9-.7-2.4-1-3.9-3.4-4-3.6-.1-.2-1-1.3-1-2.5 0-1.2.6-1.7.8-2 .2-.2.5-.3.8-.3h.2c.2 0 .4.1.5.3.2.4.6 1.5.7 1.7.1.1.1.3 0 .5-.1.2-.2.3-.3.4-.1.1-.2.2-.4.4-.1.1-.2.3-.1.5.2.4.8 1.3 1.7 2.1 1.1 1 2.1 1.3 2.5 1.5.3.1.5.1.7-.1.2-.3.6-.7.8-.9.2-.3.4-.2.6-.1.2.1 1.6.8 1.8.9.3.1.4.2.5.4.1.2.1.7-.1 1.2z"/>
+              </svg>
+              <span>Submit & Open WhatsApp Direct</span>
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Luxury Footer -->
+  <footer class="luxury-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <div style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 1rem;">
+            <img src="assets/images/logo.svg" alt="BuildCraft Structure Design" style="width: 36px; height: 36px;">
+            <span style="font-family: var(--font-heading); font-size: 1.25rem; font-weight: 700; color: #FFF; text-transform: uppercase;">BuildCraft</span>
+          </div>
+          <p>Premier structural engineering and architectural consultancy based at Collin Street / Park Street, Kolkata. Delivering high-precision RCC blueprints, seismic designs, and structural rehabilitation.</p>
+        </div>
+
+        <div class="footer-col">
+          <h3>Navigation</h3>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="structural.html">Structural</a></li>
+            <li><a href="architecture.html">Architecture</a></li>
+            <li><a href="retrofit.html">Retrofit</a></li>
+            <li><a href="projects.html">Projects</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h3>Disciplines</h3>
+          <ul class="footer-links">
+            <li><a href="structural.html">RCC Frame Design</a></li>
+            <li><a href="structural.html">Pile Foundations</a></li>
+            <li><a href="architecture.html">Sanction Blueprints</a></li>
+            <li><a href="retrofit.html">NDT Audits</a></li>
+            <li><a href="retrofit.html">Column Jacketing</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h3>Contact</h3>
+          <ul class="footer-links">
+            <li><span style="color: var(--accent-amber);">Office:</span> Collin St / Park St, Kolkata – 700016</li>
+            <li><span style="color: var(--accent-amber);">WhatsApp:</span> <a href="https://wa.me/917439076081">+91 74390 76081</a></li>
+            <li><span style="color: var(--accent-amber);">Standards:</span> IS 456, IS 1893, IS 800</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>© 2026 BuildCraft Structure Design. Collin Street / Park Street, Kolkata.</div>
+        <div style="display: flex; align-items: center; gap: 0.5rem;">
+          <a href="https://wa.me/917439076081" style="color: var(--wa-green); text-decoration: none; font-weight: 600;">
+            WhatsApp Studio: +91 74390 76081
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp Action Button -->
+  <a href="https://wa.me/917439076081?text=Hello%20BuildCraft%2C%20I%20would%20like%20to%20consult%20regarding%20a%20structural%20design%20project." class="floating-wa-btn" target="_blank" rel="noopener" aria-label="Chat with BuildCraft on WhatsApp">
+    <svg class="wa-svg-icon" viewBox="0 0 32 32" style="width: 26px; height: 26px;">
+      <circle cx="16" cy="16" r="14" fill="#FFFFFF"/>
+      <path fill="#25D366" d="M16 7C11 7 7 11 7 16c0 1.8.5 3.5 1.4 5L7 25l4.2-1.3c1.4.8 3.1 1.3 4.8 1.3 5 0 9-4 9-9s-4-9-9-9zm4.8 12.6c-.2.5-1.1 1-1.6 1.1-.4.1-.9.1-2.9-.7-2.4-1-3.9-3.4-4-3.6-.1-.2-1-1.3-1-2.5 0-1.2.6-1.7.8-2 .2-.2.5-.3.8-.3h.2c.2 0 .4.1.5.3.2.4.6 1.5.7 1.7.1.1.1.3 0 .5-.1.2-.2.3-.3.4-.1.1-.2.2-.4.4-.1.1-.2.3-.1.5.2.4.8 1.3 1.7 2.1 1.1 1 2.1 1.3 2.5 1.5.3.1.5.1.7-.1.2-.3.6-.7.8-.9.2-.3.4-.2.6-.1.2.1 1.6.8 1.8.9.3.1.4.2.5.4.1.2.1.7-.1 1.2z"/>
+    </svg>
+  </a>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
